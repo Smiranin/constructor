@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Constructor</title>
+
+    <link rel="icon" href="../static/img/ukraine.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<h1 id="products-title">Create Your Own Case for «<span data-path="img/cases/iphone-4.png">iPhone 4/4s</span>»</h1>
+<div class="container main_container">
+    <div class="row">
+
+        <!--CONSTRUCTOR-->
+        <div id="constructor" class="constructor">
+
+<!--MODALS-->
+            <!--IMG EDITOR-->
+            @@include('./modals/imgEditor.html')
+            <!--END IMG EDITOR-->
+
+            <!--TEXT EDITOR-->
+            @@include('./modals/textEditor.html')
+            <!--END TEXT EDITOR-->
+
+            <!--IMG VIEWER-->
+            @@include('./modals/imgViewer.html')
+            <!--END IMG VIEWER-->
+
+            <!--Options-->
+            @@include('./modals/options.html')
+            <!--END Options-->
+
+            <div id="preloader" class="modal preloader">
+                <div class="m_body">
+                    <p>Loading files to the server...</p>
+                    <div class="icon"></div>
+                </div>
+            </div>
+<!--END MODALS-->
+
+
+            <!--BTN PANEL-->
+            @@include('./panels/btnPanel.html')
+            <!--END BTN PANEL-->
+
+            <!--VIEW BOX-->
+            @@include('./panels/mainPanel.html')
+            <!--END VIEW BOX-->
+
+            <!--STEPS PANEL-->
+            @@include('./panels/stepsPanel.html')
+            <!--END STEPS PANEL-->
+
+        </div>
+        <!--END CONSTRUCTOR-->
+    </div>
+</div>
+
+
+<script src="js/Constansts.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

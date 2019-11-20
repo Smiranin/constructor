@@ -1,0 +1,46 @@
+.btn_panel{
+  border-right: 5px solid #EEEEEE;
+  -webkit-transition:0.3s ease-in opacity;
+  transition:0.3s ease-in opacity;
+
+  li{
+    padding: 30px;
+
+    span{
+      margin-right: 40px;
+      float: right;
+      display: inline-block;
+      position: relative;
+
+      &:before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: -50px;
+        top: -8px;
+      }
+      &.rotate_p:before{
+        background: url("@{pathBtn}rotate-p.svg");
+      }
+      &.rotate_m:before{
+        background: url("@{pathBtn}rotate-m.svg");
+      }
+      &.scale_p:before{
+        background: url("@{pathBtn}scale-p.svg");
+      }
+      &.scale_m:before{
+        background: url("@{pathBtn}scale-m.svg");
+      }
+      &.edit_text:before{
+        background: url("@{pathBtn}fonts.svg");
+      }
+      &.del:before{
+        background: url("@{pathBtn}delete.svg");
+      }
+    }
+    &:hover{
+      color: @color;
+    }
+  }
+}

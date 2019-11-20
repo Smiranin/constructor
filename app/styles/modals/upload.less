@@ -1,0 +1,49 @@
+.upload_bar {
+  height: 200px;
+
+  &.active_js{
+    display: block;
+  }
+
+  & > div {
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-right: 2px solid #eee;
+  }
+
+  .btn{
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #1889D0;
+    color: #fff;
+    margin: 30px auto 0;
+    padding: 10px 25px;
+    display: block;
+    outline: none;
+
+    &:hover{
+      background: #146DA4;
+    }
+  }
+}
+
+.icon{
+  height: 100px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.upload{
+  background: url("@{pathBtn}upload.svg") no-repeat center;
+}
+.facebook{
+  background: url("@{pathBtn}facebook.svg") no-repeat center;
+}
+.instagram{
+  background: url("@{pathBtn}instagram.svg") no-repeat center;
+}

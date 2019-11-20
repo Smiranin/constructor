@@ -1,0 +1,53 @@
+@import "fonts";
+@import "vars";
+@import "mixins";
+
+.container.main_container{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  min-height: @height_container;
+  margin-top: 30px;
+  font-size: @font-size-base;
+  font-family: @font-family-base;
+}
+
+.constructor{
+  line-height: 26px;
+  position: relative;
+  text-transform: uppercase;
+  height: 520px;
+
+  &>div{
+    box-sizing: border-box;
+    height: 100%;
+    outline: 1px solid #ffffff;
+  }
+
+  ul{
+    margin: 0;
+    list-style: none;
+    font-size: 1.3em;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  #canvas{
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    margin:auto;
+  }
+
+  .disabled{
+    cursor: default;
+    opacity: .3;
+    color: #000;
+  }
+
+}

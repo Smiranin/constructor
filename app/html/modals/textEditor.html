@@ -1,0 +1,85 @@
+<div data-component="text_editor" class="text_editor modal">
+    <div class="m_body">
+
+        <div class="m_header">
+            <h1>Step 2 - add text</h1>
+            <span data-action="_closePanel" class="close"></span>
+        </div>
+
+        <div class="input_box">
+            <input class="orange_juice" type="text" name="text" id="text" placeholder="Add your text!">
+        </div>
+
+        <ul class="selects">
+
+            <!--Fonts list-->
+            <li class="col-md-4">
+                <p>Select font:</p>
+                <span data-item="font_title" class="orange_juice">Orange juice</span>
+                <ul>
+                    <li data-action="_addFont" class="days_later">28 days later</li>
+                    <li data-action="_addFont" class="amble">Amble</li>
+                    <li data-action="_addFont" class="crafty_girls">Crafty girls</li>
+                    <li data-action="_addFont" class="faster_one">Faster one</li>
+                    <li data-action="_addFont" class="lato">Lato</li>
+                    <li data-action="_addFont" class="monsieur_la_doulaise">Monsieur la doulaise</li>
+                    <li data-action="_addFont" class="nosifer">Nosifer</li>
+                    <li data-action="_addFont" class="orange_juice">Orange juice</li>
+                    <li data-action="_addFont" class="planetbe">Planetbe</li>
+                    <li data-action="_addFont" class="remachine_script">Remachine script</li>
+                    <li data-action="_addFont" class="snowburst_one">Snowburst one</li>
+                    <li data-action="_addFont" class="syncopate">Syncopate</li>
+                </ul>
+            </li>
+            <!--End font list-->
+
+            <!--Size list-->
+            <li class="col-md-4">
+                <p>Select Size:</p>
+                <span data-item="size_title">40</span>
+                <ul>
+                    <li data-action="_addSize">20</li>
+                    <li data-action="_addSize">30</li>
+                    <li data-action="_addSize">40</li>
+                    <li data-action="_addSize">50</li>
+                    <li data-action="_addSize">60</li>
+                    <li data-action="_addSize">70</li>
+                    <li data-action="_addSize">80</li>
+                    <li data-action="_addSize">90</li>
+                    <li data-action="_addSize">100</li>
+                    <li data-action="_addSize">110</li>
+                    <li data-action="_addSize">120</li>
+                    <li data-action="_addSize">130</li>
+                </ul>
+            </li>
+            <!--End Size list-->
+
+            <!--Color picker-->
+            <li class="col-md-3">
+                <p>Select color:</p>
+                <span id="output" class="color_output"></span>
+                <ul class="picker" id="picker">
+                    <li id="field_picker">
+                        <i class="caret circle"></i>
+                        <canvas></canvas>
+                    </li>
+                    <li id="line_picker">
+                        <i class="caret line"></i>
+                        <canvas></canvas>
+                    </li>
+
+                </ul>
+            </li>
+            <!--End Color picker-->
+
+            <div class="clearfix"></div>
+
+        </ul>
+
+        <div class="buttons">
+            <div data-action="_addText" class="btn add_text pull-right">add text</div>
+            <div data-action="_closePanel" class="btn cancel pull-right">cancel</div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

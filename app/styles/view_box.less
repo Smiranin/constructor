@@ -1,0 +1,62 @@
+.view_box{
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+  font: 40px 'Trebuchet MS', Verdana, sans-serif;
+
+
+  .layer{
+    text-transform: none;
+    color: transparent;
+    box-sizing: border-box;
+    transform-origin: center;
+    position: absolute;
+    cursor: move;
+
+    &:hover{
+      border: 1px dotted #333333;
+    }
+
+    &.active_js{
+      display: block;
+      border: 2px dashed #448eff;
+
+      .corner{
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+
+        &.left_top{
+          background: url("@{pathLayers}north-west.svg") no-repeat;
+          top: -18px;
+          left: -18px;
+        }
+        &.top_right{
+          background: url("@{pathLayers}north-east.svg") no-repeat;
+          top: -18px;
+          right: -22px;
+        }
+        &.right_bottom{
+          background: url("@{pathLayers}south-east.svg") no-repeat;
+          right: -22px;
+          bottom: -22px;
+        }
+        &.bottom_left{
+          background: url("@{pathLayers}south-west.svg") no-repeat;
+          bottom: -22px;
+          left: -18px;
+        }
+      }
+      .control_rotate{
+        position: absolute;
+        width: 50px;
+        height: 32px;
+        right: -50px;
+        top: 50%;
+        transform: translateY(-45%);
+        background: url("@{pathLayers}rotate.svg");
+      }
+    }
+  }
+}

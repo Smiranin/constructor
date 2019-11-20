@@ -1,0 +1,41 @@
+<div id="order_options" class="modal">
+    <div class="m_body order_options">
+        <div class="m_header">
+            <h1>Step 4 - Order options</h1>
+            <span data-action="_toggleOptions" class="close"></span>
+        </div>
+        <!--options Options-->
+        <div class="quantity">
+            <input min="1" max="99"  type="number" name="qua" id="qua" value="1">
+            <label for="qua">Quantity</label>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="print">
+            <div>
+                <input hidden type="radio" name="print" id="print_2d">
+                <label data-action="_silicone2d" class="print_2d" for="print_2d">Silicone 2d</label>
+                <div class="clearfix"></div>
+            </div>
+
+            <div>
+                <input checked hidden type="radio" name="print" id="print_3d">
+                <label data-action="_plastic3d" class="print_3d" for="print_3d">Plastic 3d</label>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+        <div data-item="list_color" class="list_color">
+            <p data-item="color_title" class="black">Color: <span>Black</span></p>
+            <ul data-action="_choiceColor">
+                <li class="black">Black</li>
+                <li class="white">White</li>
+                <li class="red">Red</li>
+                <li class="grey">Grey</li>
+                <li class="green">Green</li>
+            </ul>
+        </div>
+        <button data-action="_toggleOptions" class="btn">ok</button>
+    </div>
+</div>

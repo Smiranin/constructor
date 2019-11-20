@@ -1,0 +1,72 @@
+#picker{
+  overflow: hidden;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  z-index: 111;
+}
+
+#field_picker{
+  position: relative;
+  width: 80%;
+  float: left;
+  height: 100%;
+}
+#line_picker{
+  position: relative;
+  width: 10%;
+  margin-left: 10%;
+  float: left;
+  height: 100%;
+}
+
+.caret{
+  cursor: pointer;
+  position: absolute;
+  display: block;
+}
+
+.caret.circle{
+  right: -3px;
+  top: -3px;
+  width: 7px;
+  height:7px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: transparent;
+
+  &:hover{
+    border-color: #fff;
+  }
+}
+
+.caret.line{
+  width: 100%;
+  height:5px;
+  border-radius: 5px;
+  outline: 1px solid #000000;
+  &:hover{
+    outline-color: #fff;
+  }
+}
+
+.caret.line:before{
+  position: absolute;
+  left: -11px;
+  top: -3.5px;
+  content: '';
+  display: block;
+  border-color: #fff #fff #fff #000;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+}
+.caret.line:after{
+  position: absolute;
+  right: -11px;
+  top: -3.5px;
+  content: '';
+  display: block;
+  border-color: #fff #000 #fff #fff;
+  border-style: solid;
+  border-width: 6px 10px 6px 0;
+}

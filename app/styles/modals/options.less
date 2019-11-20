@@ -1,0 +1,185 @@
+.order_options{
+  position: relative;
+  box-sizing: border-box;
+  height: 90%;
+  width: 300px;
+  padding: 0 20px 20px;
+  font-size: 14px;
+  
+  .btn{
+    color: #fff;
+    background: @blueColor;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+  }
+
+  .close{
+    right: -15px;
+  }
+
+  h1{
+    font-size: 1.1em;
+  }
+
+
+  input, label{
+    float: left;
+  }
+
+  label{
+    cursor: pointer;
+    position: relative;
+
+    &:hover{
+      color: @color;
+    }
+  }
+
+
+  .quantity{
+    padding-top: 30px;
+
+    input{
+      text-align: center;
+      width:35px;
+      height: 20px;
+      margin-right: 20px;
+
+    }
+
+/*    label{
+
+      &:before, &:after{
+        box-sizing: border-box;
+        outline: 1px solid #3f4244;
+        position: absolute;
+        float: left;
+        height: 12px;
+        width: 12px;
+        content: '';
+        left: -35px;
+      }
+
+      &:before{
+        top: -2px;
+        background: @color url("@{pathIcons}plus.png") center no-repeat;
+        background-size: 50%;
+      }
+
+      &:after{
+        top: 10px;
+        background: @color url("@{pathIcons}minus.png") center no-repeat;
+        background-size: 50%;
+      }
+    }*/
+  }
+
+
+  .print{
+
+    label{
+      display: block;
+      margin: 15px 0 0 60px;
+    }
+
+    label:before{
+      position: absolute;
+      content: "";
+      display: block;
+      cursor: pointer;
+      box-sizing: border-box;
+      width: 15px;
+      height: 15px;
+      border: 1px solid #3f4244;
+      border-radius: 50%;
+      background: #eee;
+      top: 7px;
+      left: -55px;
+    }
+
+
+    input:checked + label:before{
+      border: 5px solid @color;
+      background: #3f4244;
+    }
+  }
+
+
+  .list_color{
+    text-align: left;
+    transition: max-height 0.25s ease-out;
+    margin-top: 10px;
+    overflow: hidden;
+    max-height: 0;
+
+    p{
+      position: relative;
+      padding-left: 50px;
+    }
+
+    p:before{
+      position: absolute;
+      content: '';
+      left: 5px;
+      top: 5px;
+      width:15px;
+      height:15px;
+    }
+
+    .black:before{
+      background: #000;
+    }
+
+    .white:before{
+      background: #fff;
+      border: 1px solid #3f4244;
+      box-sizing: border-box;
+    }
+
+    .grey:before{
+      background: grey;
+    }
+
+    .red:before{
+      background: red;
+    }
+
+    .green:before{
+      background: green;
+    }
+
+
+    ul{
+      padding-left: 40px;
+      width: 50%;
+      font-size: 0.7em;
+      background: #eee;
+    }
+
+    li{
+      background: inherit;
+      cursor: pointer;
+      padding-left: 12px;
+      padding-top: 10px;
+      position: relative;
+      
+      &:hover{
+        color: @color;
+      }
+
+      &:before{
+        left: -35px;
+        top: 15px;
+        width:15px;
+        height:15px;
+        content: "";
+        position: absolute;
+      }
+    }
+  }
+
+}
